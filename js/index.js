@@ -96,7 +96,6 @@ function checkOut(){
     total.value = '';
     cash.value = '';
     change.value = '';
-    name.value = '';
 
 
     productQuantity1.value = '';
@@ -105,9 +104,7 @@ function checkOut(){
     productQuantity4.value = '';
     productQuantity5.value = '';
     productQuantity6.value = '';
-    productQuantity7.value = '';
-    productQuantity8.value = '';
-    productQuantity9.value = '';
+
 }
 
 qty1.addEventListener("keyup", addOrder);
