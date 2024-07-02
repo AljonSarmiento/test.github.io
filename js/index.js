@@ -34,6 +34,9 @@ function addOrder(){
         var qty = parseFloat(qty1.value);
         var price = parseFloat(price1.textContent);
         totalPrice += qty * price;
+    }else{
+        cash.value = '';
+        change.value = '';
     }
     if (parseFloat(qty2.value) > 0){
         var order= qty2.value.toString() + ' pc/s x '+ price2.textContent + '------'+ product2.textContent + '------ Php' + (parseFloat(qty2.value)*parseFloat(price2.textContent)) + '\n'
@@ -42,6 +45,9 @@ function addOrder(){
         var qty = parseFloat(qty2.value);
         var price = parseFloat(price2.textContent);
         totalPrice += qty * price;
+    }else{
+        cash.value = '';
+        change.value = '';
     }
     if (parseFloat(qty3.value) > 0){
         var order = qty3.value.toString() + ' pc/s x '+ price3.textContent + '------'+ product3.textContent + '------ Php' + (parseFloat(qty3.value)*parseFloat(price3.textContent)) + '\n'
@@ -50,6 +56,9 @@ function addOrder(){
         var qty = parseFloat(qty3.value);
         var price = parseFloat(price3.textContent);
         totalPrice += qty * price;
+    }else{
+        cash.value = '';
+        change.value = '';
     }
     if (parseFloat(qty4.value) > 0){
         var order= qty4.value.toString() + ' pc/s x '+ price4.textContent + '------'+ product4.textContent + '------ Php' + (parseFloat(qty4.value)*parseFloat(price4.textContent)) + '\n'
@@ -58,6 +67,9 @@ function addOrder(){
         var qty = parseFloat(qty4.value);
         var price = parseFloat(price4.textContent);
         totalPrice += qty * price;
+    }else{
+        cash.value = '';
+        change.value = '';
     }
     if (parseFloat(qty5.value) > 0){
         var order = qty5.value.toString() + ' pc/s x '+ price5.textContent + '------'+ product5.textContent + '------ Php' + (parseFloat(qty5.value)*parseFloat(price5.textContent)) + '\n'
@@ -66,6 +78,9 @@ function addOrder(){
         var qty = parseFloat(qty5.value);
         var price = parseFloat(price5.textContent);
         totalPrice += qty * price;
+    }else{
+        cash.value = '';
+        change.value = '';
     }
     if (parseFloat(qty6.value) > 0){
         var order= qty6.value.toString() + ' pc/s x '+ price6.textContent + '------'+ product6.textContent + '------ Php' + (parseFloat(qty6.value)*parseFloat(price6.textContent)) + '\n'
@@ -74,6 +89,9 @@ function addOrder(){
         var qty = parseFloat(qty6.value);
         var price = parseFloat(price6.textContent);
         totalPrice += qty * price;
+    }else{
+        cash.value = '';
+        change.value = '';
     }
     total.value = '₱ ' + totalPrice.toFixed(2);
 }
@@ -91,19 +109,21 @@ function calculateChange() {
 
 function checkOut(){
     alert('Thank you for purchase ayieeeeeeeeehhhhhhhhhh\n\nRide Safe GARRRRR!!');
-
+    
     carts.textContent = "";
-    total.value = '';
+    total.value = '₱ 0.00';
     cash.value = '';
     change.value = '';
-
-
+    
+    // Reset all product quantities
     qty1.value = '';
     qty2.value = '';
     qty3.value = '';
     qty4.value = '';
     qty5.value = '';
     qty6.value = '';
+
+
 }
 
 qty1.addEventListener("keyup", addOrder);
