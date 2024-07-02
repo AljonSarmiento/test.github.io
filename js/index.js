@@ -98,13 +98,12 @@ function checkOut(){
     change.value = '';
 
 
-    productQuantity1.value = '';
-    productQuantity2.value = '';
-    productQuantity3.value = '';
-    productQuantity4.value = '';
-    productQuantity5.value = '';
-    productQuantity6.value = '';
-
+    qty1.value = '';
+    qty2.value = '';
+    qty3.value = '';
+    qty4.value = '';
+    qty5.value = '';
+    qty6.value = '';
 }
 
 qty1.addEventListener("keyup", addOrder);
