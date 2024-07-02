@@ -92,7 +92,22 @@ function calculateChange() {
 function checkOut(){
     alert('Thank you for purchase ayieeeeeeeeehhhhhhhhhh\n\nRide Safe GARRRRR!!');
 
+    carts.textContent = "";
+    total.value = '';
+    cash.value = '';
+    change.value = '';
+    name.value = '';
 
+
+    productQuantity1.value = '';
+    productQuantity2.value = '';
+    productQuantity3.value = '';
+    productQuantity4.value = '';
+    productQuantity5.value = '';
+    productQuantity6.value = '';
+    productQuantity7.value = '';
+    productQuantity8.value = '';
+    productQuantity9.value = '';
 }
 
 qty1.addEventListener("keyup", addOrder);
