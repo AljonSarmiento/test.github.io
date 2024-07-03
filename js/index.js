@@ -76,8 +76,7 @@ function addOrder(){
         totalPrice += qty * price;
     }
     total.value = '₱ ' + totalPrice.toFixed(2);
-    cash.value = '';
-    change.value = '';
+    calculateChange();
 }
 
 function calculateChange() {
